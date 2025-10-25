@@ -1,11 +1,24 @@
+/*
+ * CalculadoraDeNotas.java
+ * 
+ * Uma classe que calcula a média das notas de um aluno e classifica seu desempenho.
+ */
+
 public class CalculadoraDeNotas {
 
     private double[] notas;
 
+
+    /*
+     * Construtor que inicializa o array de notas
+     */
     public CalculadoraDeNotas(double[] notas) {
         this.notas = notas;
     }
 
+    /*
+     * Método para calcular a média das notas
+     */
     public double calcularMedia() {
         double soma = 0;
         for (int i = 0; i < notas.length; i++) {
@@ -14,6 +27,9 @@ public class CalculadoraDeNotas {
         return soma / notas.length;
     }
 
+    /*
+     * Método para classificar o aluno com base na média
+     */
     public String classificarAluno() {
         double media = calcularMedia();
         if (media >= 7){
@@ -24,12 +40,18 @@ public class CalculadoraDeNotas {
             return "Reprovado";
     }
 
+    /*
+     * Método para exibir o resultado final
+     */
     public void exibirResultado(String nomeAluno) {
         System.out.println("Aluno: " + nomeAluno);
         System.out.println("Média: " + calcularMedia());
         System.out.println("Situação: " + classificarAluno());
     }
 
+    /*
+     * Método principal para testar a classe
+     */
     public static void main(String[] args) {
         double[] notas = { 6.5, 7.0, 8.0, 9.5 };
         CalculadoraDeNotas c = new CalculadoraDeNotas(notas);
