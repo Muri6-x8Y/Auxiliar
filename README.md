@@ -16,13 +16,13 @@ A classe `CalculadoraDeNotas` recebe um vetor de notas e realiza:
 
 ##  Lógica de Classificação
 
-|---------------|--------------|
+
 | Média         | Situação     |
 |---------------|--------------|
 | ≥ 7.0         |  Aprovado    |
 | ≥ 4.0 e < 7.0 |  Recuperação |
 | < 4.0         |  Reprovado   |
-|---------------|--------------|
+
 
 
 ##  Exemplo de uso
