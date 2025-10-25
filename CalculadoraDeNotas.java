@@ -8,7 +8,6 @@ public class CalculadoraDeNotas {
 
     private double[] notas;
 
-
     /*
      * Construtores que inicializam o array de notas
      */
@@ -19,7 +18,6 @@ public class CalculadoraDeNotas {
     public CalculadoraDeNotas() {
 
     }
-    
 
     /*
      * Método para validar as notas (não podem ser negativas)
