@@ -16,6 +16,11 @@ public class CalculadoraDeNotas {
         this.notas = notas;
     }
 
+    public CalculadoraDeNotas() {
+
+    }
+    
+
     /*
      * Método para calcular a média das notas
      */
