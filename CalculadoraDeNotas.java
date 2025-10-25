@@ -53,7 +53,7 @@ public class CalculadoraDeNotas {
      * Método principal para testar a classe
      */
     public static void main(String[] args) {
-        double[] notas = { 6.5, 7.0, 8.0, 9.5 };
+        double[] notas = {6.5, 7.0, 8.0, 9.5};
         CalculadoraDeNotas c = new CalculadoraDeNotas(notas);
         c.exibirResultado("Lucas");
     }
