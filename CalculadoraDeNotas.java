@@ -22,10 +22,35 @@ public class CalculadoraDeNotas {
     
 
     /*
-     * Método para calcular a média das notas
+     * Método para validar as notas (não podem ser negativas)
+     */
+    private boolean validarNotas(double[] notas) {
+        for (double nota : notas) {
+            if (nota < 0) {
+                return false;
+            }       
+        }
+        return true;
+    }
+    
+
+    /*
+     * Método para calcular a média das notas e impedir que tenham notas negativas
      */
     public double calcularMedia() {
         double soma = 0;
+        if(validarNotas(notas) == false){
+            return 0;
+        }
+        try {
+            if (notas.length == 0) {
+                throw new ArithmeticException("Array de notas vazio.");
+            }
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+            return 0;
+        }
+        
         for (int i = 0; i < notas.length; i++) {
             soma += notas[i];
         }
@@ -41,8 +66,9 @@ public class CalculadoraDeNotas {
             return "Aprovado";
         } else if (media >= 4){
             return "Recuperação";
-        } else
+        } else{
             return "Reprovado";
+        }
     }
 
     /*
