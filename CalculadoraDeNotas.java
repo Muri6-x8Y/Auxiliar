@@ -10,7 +10,7 @@ public class CalculadoraDeNotas {
 
 
     /*
-     * Construtor que inicializa o array de notas
+     * Construtores que inicializam o array de notas
      */
     public CalculadoraDeNotas(double[] notas) {
         this.notas = notas;
