@@ -16,11 +16,11 @@ public class CalculadoraDeNotas {
 
     public String classificarAluno() {
         double media = calcularMedia();
-        if (media >= 7)
+        if (media >= 7){
             return "Aprovado";
-        else if (media >= 4)
+        } else if (media >= 4){
             return "Recuperação";
-        else
+        } else
             return "Reprovado";
     }
 
