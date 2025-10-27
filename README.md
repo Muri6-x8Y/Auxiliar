@@ -33,7 +33,7 @@ public static void main(String[] args) {
     CalculadoraDeNotas c = new CalculadoraDeNotas(notas);
     c.exibirResultado("Lucas");
 }
-
+```
 ---
 
 # Sistema de Pedidos em Java
