@@ -30,16 +30,6 @@ public class SistemaPedidos {
     }
 
     public void aplicarDesconto(double percentual) {
-        totalGeral = 0;
-    for (Pedido p : pedidos) {
-        double novoTotal = p.getTotal() - (p.getTotal() * percentual / 100);
-        p.setTotal(novoTotal);
-        totalGeral += novoTotal;
-    }
-    System.out.println("Desconto aplicado de " + percentual + "%!");
-}
-
-    public void aplicarDesconto(double percentual) {
         for (Pedido p : pedidos) {
             double novoTotal = p.getTotal() - (p.getTotal() * percentual / 100);
             p.setTotal(novoTotal);
