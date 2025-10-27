@@ -12,6 +12,14 @@ public class SistemaPedidos {
         totalGeral += p.getTotal();
         System.out.println("Pedido adicionado: " + produto + " - Total: R$" + p.getTotal());
     }
+    
+    public void buscarPedidoPorCliente(String nome) {
+        for (Pedido p : pedidos) {
+            if (p.getCliente().equalsIgnoreCase(nome)) {
+                System.out.println("Encontrado: " + p.getProduto() + " - Total: R$" + p.getTotal());
+            }
+        }
+    }
 
     public void listarPedidos() {
         for (int i = 0; i < pedidos.size(); i++) {
