@@ -34,6 +34,8 @@ public static void main(String[] args) {
     c.exibirResultado("Lucas");
 }
 
+---
+
 # Sistema de Pedidos em Java
 
 Este projeto é uma simulação simples de um sistema de gerenciamento de pedidos desenvolvido em Java.  
