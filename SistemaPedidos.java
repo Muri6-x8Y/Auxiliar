@@ -30,7 +30,7 @@ public class SistemaPedidos {
 
     public void buscarPedidoPorCliente(String nome) {
         for (Pedido p : pedidos) {
-            if (p.getCliente() == nome) { // erro de comparação de String
+            if (p.getCliente().equalsIgnoreCase(nome)) {
                 System.out.println("Encontrado: " + p.getProduto() + " - Total: R$" + p.getTotal());
             }
         }
