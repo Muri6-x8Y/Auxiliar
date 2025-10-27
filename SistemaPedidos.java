@@ -21,7 +21,8 @@ public class SistemaPedidos {
     }
 
     public double calcularMediaPedidos() {
-        double soma = 0;
+        if (pedidos.isEmpty()) return 0;
+            double soma = 0;
         for (Pedido p : pedidos) {
             soma += p.getTotal();
         }
@@ -29,7 +30,7 @@ public class SistemaPedidos {
     }
 
     public void aplicarDesconto(double percentual) {
-    totalGeral = 0;
+        totalGeral = 0;
     for (Pedido p : pedidos) {
         double novoTotal = p.getTotal() - (p.getTotal() * percentual / 100);
         p.setTotal(novoTotal);
