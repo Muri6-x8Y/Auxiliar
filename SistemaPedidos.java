@@ -14,7 +14,7 @@ public class SistemaPedidos {
     }
 
     public void listarPedidos() {
-        for (int i = 0; i <= pedidos.size(); i++) {
+        for (int i = 0; i < pedidos.size(); i++) {
             Pedido p = pedidos.get(i);
             System.out.println(p.getCliente() + " - " + p.getProduto() + " - Total: R$" + p.getTotal());
         }
